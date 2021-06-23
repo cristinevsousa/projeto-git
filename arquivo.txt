@@ -1,1 +1,50 @@
-Primeira versão
+Utilizando comandos Git depois de instalado o Git na máquina:
+
+
+-> git init, na pasta raíz do projeto, inicia o rastreamento de versões 
+
+-> git status, verifica arquivos não rastreados e/ou modificados
+
+-> git add, adiciona arquivos ao rastreamento
+
+-> git add ., adiciona todos os arquivos ao rastreamento
+
+-> git add *.html, adiciona todos os arquivos com extensão html ao rastreamento
+
+-> git add pasta/*, adiciona todos os arquivos de uma pasta ao rastreamento
+
+-> git add pasta/*.html, adiciona todos os arquivos .html de uma pasta ao rastreamento
+
+-> git log, mostra todas as versões rastreadas 
+
+-> git log -1, parâmetro para visualizar apenas última versão rastreada ou outro número para mais versões
+
+-> git commit, adiciona ponto na história do projeto com mensagem explicativa sobre as modificações feitas na versão
+
+-> git commit -m, para mensagem no próprio terminal, entre "".
+
+-> git diff, visualizar alterações que foram feitas no arquivo rastreado
+
+-> git notepad .gitignore, cria um registro para adicionar arquivos/pastas a serem ignorados pelo rastreamento
+
+-> git checkout + cod. do commit, pula para o respectivo ponto da história para possíveis visualizações de modificações naquela altura   
+
+-> git checkout master, volta para o último ponto da história na master
+
+-> git checkout + nome da branch, sai do ponto atual para a branch escolhida
+
+-> git branch + nome da nova branch, cria uma ramificação da história principal
+
+-> git merge + nome da branch, adiciona a branch à master
+
+-> git branch -D + nome da branch, exclui a branch selecionada
+
+-> git remote add + nome identificador do ponto da história no repositório (ex.: origin) + link do repositório, adiciona o repositório remoto escolhido ao projeto
+
+-> git remote -v, mostra o repositório vinculado ao projeto
+
+-> git push + nome indentificador do repositório (ex.: origin) + ramificação a ser enviada para o repositório (ex.: master), envia o código da ramificação selecionada para o repositório
+
+-> git pull + nome indentificador do repositório (ex.: origin) + ramificação a ser enviada para o repositório (ex.: master), carrega o código da ramificação selecionada do repositório para a máquina
+
+-> git clone + url do repositório + nome da pasta, carrega o código do repositório para a máquina
