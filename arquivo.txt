@@ -45,6 +45,6 @@ Utilizando comandos Git depois de instalado o Git na máquina:
 
 -> git push + nome indentificador do repositório (ex.: origin) + ramificação a ser enviada para o repositório (ex.: master), envia o código da ramificação selecionada para o repositório
 
--> git pull + nome indentificador do repositório (ex.: origin) + ramificação a ser enviada para o repositório (ex.: master), carrega o código da ramificação selecionada do repositório para a máquina
+-> git pull + nome indentificador do repositório (ex.: origin) + ramificação a ser carregada do repositório (ex.: master), carrega o código da ramificação selecionada do repositório para a máquina
 
 -> git clone + url do repositório + nome da pasta, carrega o código do repositório para a máquina
