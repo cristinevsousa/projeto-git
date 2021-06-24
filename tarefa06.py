@@ -3,8 +3,7 @@
 
 def conversor_segundos(num_horas):
     minutos_hora = num_horas * 60
-    minutos = minutos_hora
-    segundos = minutos * 60
+    segundos = minutos_hora * 60
     return segundos
 
 
