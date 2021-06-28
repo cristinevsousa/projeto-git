@@ -2,14 +2,14 @@
 # O tamanho da linha deve ser definido na chamada da função.
 
 def linha(quant):
-    underline = ""
-    i = 0
-    while i < quant:
+    n = ""
+    for i in range(quant):
         i += 1
-        underline += "_"
-    return underline
+        n += "_"
+    return n
 
 
-valor = int(input("Digite um valor para o tamanho da linha que deseja: "))
+valor = int(
+    input("Digite o número de underlines para o tamanho da linha que deseja: "))
 saida = linha(valor)
 print(saida)
