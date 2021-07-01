@@ -3,6 +3,10 @@ Utilizando comandos Git depois de instalado o Git na máquina:
 
 -> git init, na pasta raíz do projeto, inicia o rastreamento de versões 
 
+-> git config --global user.email "you@example.com"
+
+-> git config --global user.name "Your Name"
+
 -> git status, verifica arquivos não rastreados e/ou modificados
 
 -> git add, adiciona arquivos ao rastreamento

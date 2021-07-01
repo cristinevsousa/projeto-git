@@ -7,18 +7,70 @@
 # f) lista em ordem decrescente.
 
 lista = [5, 7, 2, 9, 4, 1, 3]
+max_ = 0
+min_ = lista[0]
+total_lista = 0
+soma = 0
+lista_crescente = []
+lista_decrescente = []
 
 print("Lista Original:", lista)
 
-print("Tamanho da lista:", len(lista))
+for i in lista:
+    soma += i
+    total_lista += 1
 
-print("Maior valor da lista:", max(lista))
+for i in range(total_lista):
+            
+    if lista[i] < min_:
+        min_ = lista[i]
 
-print("Menor valor da lista:", min(lista))
+    if lista[i] > max_:
+        max_ = lista[i]
 
-print("Soma de todos os valores da lista:", sum(lista))
+print("Tamanho da lista:", total_lista)
+print("Menor valor da lista:", min_)
+print("Maior valor da lista:", max_)
+print("Soma de todos os valores da lista:", soma)
 
-print("Lista em ordem crescente:", sorted(lista))
+for i in range(total_lista):
+        
+    for j in range(total_lista):
+            
+        if lista[i] < lista[j]:
 
-lista.sort(reverse=True)
-print("Lista em ordem decrescente:", lista)
+            ordem = lista[i]
+            lista[i] = lista[j]
+            lista[j] = ordem
+
+
+lista_crescente = lista
+
+print("Lista em ordem crescente:", lista_crescente)
+
+
+for i in range(total_lista):
+        
+    for j in range(total_lista):
+            
+        if lista[i] > lista[j]:
+
+            ordem = lista[i]
+            lista[i] = lista[j]
+            lista[j] = ordem
+
+lista_decrescente = lista
+
+print("Lista em ordem decrescente:", lista_decrescente)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,12 +1,40 @@
 # 3. Escreva um programa que leia 20 valores inteiros e informe a média deles, o maior e o menor valor
 
-numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-           11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+print("Digite uma sequência de 20 números inteiros utilizando enter para adicionar cada um:")
+numeros_lista = []
+soma = 0
+max_ = 0
+min_ = 0
 
-print("Lista Original:", numeros)
+while len(numeros_lista) < 20:        
+            for i in range(20):
+                  
+                numero = int(input())
+                soma += numero    
 
-print("A média de todos os valores é: ", (sum(numeros)/20))
+                if i == 0:
+                    min_ = numero
 
-print("O maior valor da lista é:", max(numeros))
+                if numero > max_:
+                    max_ = numero
 
-print("O menor valor da lista é:", min(numeros))
+                if numero < min_:
+                    min_ = numero
+                    
+                numeros_lista.append(numero)
+                    
+                if i != 19:
+                    print("Você digitou o número: ", numero, " na posição: ", i+1)
+                    print("Digite o próximo número")
+                else:
+                    print("Pronto!")
+                    print()
+
+
+print("Resultado:", numeros_lista)
+print()
+print("A média de todos os valores é: ", (soma/20))
+print()
+print("O maior valor da lista é:", max_)
+print()
+print("O menor valor da lista é:", min_)

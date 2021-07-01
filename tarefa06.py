@@ -8,6 +8,6 @@ def conversor_segundos(num_horas):
 
 
 valor_hora = int(
-    input("Digite um valor inteiro para a quantidade de horas que deseja converter: "))
+    input("Digite um valor inteiro para a quantidade de horas que deseja converter para segundos: "))
 resultado = conversor_segundos(valor_hora)
-print("O resultado da conversão é:", resultado, "segundos")
+print("O resultado da conversão é de:", resultado, "segundos")

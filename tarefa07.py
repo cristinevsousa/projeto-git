@@ -8,4 +8,11 @@
 #print(" * *")
 #print(" *****")
 
+#Alternativa 1, com estrutura de repetição
+for i in [" *", " * *", " * *",
+          " * *", "*** ***", " * *", " * *", " *****"]:
+    print(i)
+
+
+#Alternativa 2
 print(" *\n * *\n * *\n * *\n*** ***\n * *\n * *\n *****")
